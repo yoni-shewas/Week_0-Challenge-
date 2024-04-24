@@ -1,0 +1,1 @@
+# Week_0-Challenge from kifya and 10 Academy challenge on Solar Radiation Measurement Data to develope a strategic approach to significantly enhance its operational efficiency and sustainability for MoonLight Energy Solutions
