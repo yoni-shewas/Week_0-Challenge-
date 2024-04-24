@@ -11,19 +11,19 @@ def clean_data(filename):
         df = df.drop_duplicates()
         df = df.reset_index(drop=True)
 
-        # # measurements from modules and sensors that are irrelevant
-        # df = df.drop('ModA (W/m²)', axis=1)
-        # df = df.drop('ModB (W/m²)', axis=1)
-        # # cleaning data of the modules used
-        # df = df.drop('Cleaning (1 or 0)', axis=1)
-        # # temperature of modules used
-        # df = df.drop('TModA (°C)', axis=1)
-        # df = df.drop('TModB (°C)', axis=1)
-        # # standard deviation of modules used
-        # df = df.drop('WSstdev (m/s)', axis=1)
-        # df = df.drop('WDstdev', axis=1)
-        # # comments
-        # df = df.drop('Comments', axis=1)
+        # measurements from modules and sensors that are irrelevant
+        df = df.drop('ModA (W/m²)', axis=1)
+        df = df.drop('ModB (W/m²)', axis=1)
+        # cleaning data of the modules used
+        df = df.drop('Cleaning (1 or 0)', axis=1)
+        # temperature of modules used
+        df = df.drop('TModA (°C)', axis=1)
+        df = df.drop('TModB (°C)', axis=1)
+        # standard deviation of modules used
+        df = df.drop('WSstdev (m/s)', axis=1)
+        df = df.drop('WDstdev', axis=1)
+        # comments
+        df = df.drop('Comments', axis=1)
 
         # Save cleaned data to a new CSV file
         cleaned_filename = f"cleaned_data/{filename}"
